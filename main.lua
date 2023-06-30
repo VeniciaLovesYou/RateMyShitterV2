@@ -641,7 +641,7 @@ booths:Button("Troll Booth", function()
     local args = {
         [1] = "Update",
         [2] = {
-            ["DescriptionText"] = "Cliсk here to rent this booth",
+            ["DescriptionText"] = "Clickhere to rent this booth",
             ["ImageId"] = "0"
         }
     }
