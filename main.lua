@@ -628,7 +628,7 @@ booths:Toggle("Rate Bot Booth",false, function(t)
                             --    ["content-type"] = "application/json" 
                            -- }
                           --  syn.request({Url = getgenv().webhook, Body = game:GetService("HttpService"):JSONEncode(data), Method = "POST", Headers = headers})
-                        end
+                       -- end
                     end
                 end
             end)
