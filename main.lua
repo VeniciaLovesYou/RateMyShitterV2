@@ -611,23 +611,23 @@ booths:Toggle("Rate Bot Booth",false, function(t)
                                 
                             game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
-                            local data = {
-                                ["embeds"] = {
+                          --  local data = {
+                            --    ["embeds"] = {
                                     {
-                                        ["title"] = "**Player has been rated!**",
-                                        ["description"] = "The bot has rated "..messageData.FromSpeaker.." "..number.."/10",
-                                        ["type"] = "rich",
-                                        ["color"] = tonumber(0x7269da),
-                                    }
-                                },
-                                ["avatar_url"] = "https://cdn.discordapp.com/attachments/984209136562602014/1012131586826846208/Rate_bot.png",
-                                ["username"] = "Rate Bot"
-                            }
+                           --             ["title"] = "**Player has been rated!**",
+                          --              ["description"] = "The bot has rated "..messageData.FromSpeaker.." "..number.."/10",
+                            --            ["type"] = "rich",
+                           --             ["color"] = tonumber(0x7269da),
+                            --        }
+                            --    },
+                           --     ["avatar_url"] = "https://cdn.discordapp.com/attachments/984209136562602014/1012131586826846208/Rate_bot.png",
+                           --     ["username"] = "Rate Bot"
+                           -- }
 
-                            local headers = {
-                                ["content-type"] = "application/json" 
-                            }
-                            syn.request({Url = getgenv().webhook, Body = game:GetService("HttpService"):JSONEncode(data), Method = "POST", Headers = headers})
+                          --  local headers = {
+                            --    ["content-type"] = "application/json" 
+                           -- }
+                          --  syn.request({Url = getgenv().webhook, Body = game:GetService("HttpService"):JSONEncode(data), Method = "POST", Headers = headers})
                         end
                     end
                 end
